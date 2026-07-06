@@ -1,0 +1,62 @@
+.architecture-intro {
+  padding: clamp(1.2rem, 4vw, 2.4rem);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.architecture-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.architecture-card {
+  padding: 1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--card) 82%, transparent);
+}
+
+.architecture-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.architecture-diagram {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--bg-soft) 78%, transparent);
+}
+
+.diagram-layer {
+  padding: 0.85rem;
+  border: 1px solid var(--border-soft);
+  border-radius: calc(var(--radius) * 0.75);
+  background: color-mix(in srgb, var(--primary) 8%, transparent);
+}
+
+.strategy-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.strategy-item {
+  padding: 1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+@media (max-width: 980px) {
+  .architecture-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .architecture-grid {
+    grid-template-columns: 1fr;
+  }
+}

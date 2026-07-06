@@ -1,0 +1,77 @@
+.changelog-toolbar {
+  padding: 1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: var(--card);
+  margin-bottom: 1rem;
+}
+
+.changelog-layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.changelog-sidebar {
+  position: sticky;
+  top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.changelog-feed {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.change-entry {
+  padding: 1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.change-entry-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.change-date {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.type-feature {
+  color: var(--success);
+}
+
+.type-fix {
+  color: var(--danger);
+}
+
+.type-refactor {
+  color: var(--secondary);
+}
+
+.type-documentation {
+  color: var(--primary);
+}
+
+.type-release {
+  color: var(--warning);
+}
+
+@media (max-width: 900px) {
+  .changelog-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .changelog-sidebar {
+    position: static;
+  }
+}

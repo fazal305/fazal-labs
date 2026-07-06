@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Design System | Fazal Labs</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://code.jquery.com" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="css/design-system.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div id="sidebar-root"></div>
+
+      <main class="main-content">
+        <div class="page-container">
+          <header class="page-header">
+            <div>
+              <p class="eyebrow">Runtime Tokens</p>
+              <h1 class="page-title">Design System</h1>
+              <p class="page-description">
+                Inspect live theme tokens, component styles, typography,
+                buttons, cards, badges, tables, and forms.
+              </p>
+            </div>
+            <a class="btn-lab" href="settings.html" data-transition-link
+              >Customize Theme</a
+            >
+          </header>
+
+          <section class="section">
+            <div class="section-header">
+              <div>
+                <h2 class="section-title">Theme Tokens</h2>
+                <p class="section-note">
+                  Click any token to copy its current value.
+                </p>
+              </div>
+            </div>
+            <div id="themeTokens" class="grid token-grid"></div>
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <div>
+                <h2 class="section-title">Live Theme Preview</h2>
+                <p class="section-note">
+                  The preview reads directly from the workspace theme.
+                </p>
+              </div>
+            </div>
+            <div id="liveThemePreview" class="live-theme-bar"></div>
+          </section>
+
+          <section class="section grid component-preview-grid">
+            <div>
+              <div class="section-header">
+                <div>
+                  <h2 class="section-title">Typography</h2>
+                  <p class="section-note">
+                    Brand, title, body, and muted text.
+                  </p>
+                </div>
+              </div>
+              <div id="typographyPreview" class="preview-panel"></div>
+            </div>
+
+            <div>
+              <div class="section-header">
+                <div>
+                  <h2 class="section-title">Components</h2>
+                  <p class="section-note">Reusable UI examples.</p>
+                </div>
+              </div>
+              <div id="componentPreviews" class="preview-panel"></div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/design-system.js"></script>
+  </body>
+</html>
