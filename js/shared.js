@@ -115,7 +115,8 @@ function seedDemoData() {
         ["suite-worksuite", "WorkSuite", "worksuite", "💼", "Business and productivity applications.", "Dashboards and operational tools for projects, teams, customers, content, habits, schools, and HR workflows.", ["Invoice manager", "Team calendar", "Workflow automations"]],
         ["suite-civic-suite", "Civic Suite", "civic-suite", "🌍", "Projects solving public or mapping problems.", "Civic technology projects focused on transit, reporting, public issue resolution, and sustainability education.", ["Ward map explorer", "Public service tracker", "Civic open data portal"]],
         ["suite-design-suite", "Design Suite", "design-suite", "🎨", "Creative tools and UI engineering.", "Design, animation, query, and algorithm visualization tools for building interactive frontend experiences.", ["Icon studio", "Theme generator", "Prototype recorder"]],
-        ["suite-physics-engine", "Physics Engine", "physics-engine", "⚛", "Simulation and graphics.", "Simulation projects for particles, physics, collision systems, graphics, and interactive experiments.", ["2D Physics Engine", "Collision Sandbox", "Soft Body Simulator", "Fluid Simulator"]]
+        ["suite-physics-engine", "Physics Engine", "physics-engine", "⚛", "Simulation and graphics.", "Simulation projects for particles, physics, collision systems, graphics, and interactive experiments.", ["2D Physics Engine", "Collision Sandbox", "Soft Body Simulator", "Fluid Simulator"]],
+        ["suite-arcade", "Arcade", "arcade", "🕹", "Games and playful browser experiments.", "Browser games and lighthearted interactive experiments — board games, arcade classics, reaction tests, and generators built for fun.", ["Leaderboards", "Multiplayer lobbies", "Achievement system"]]
     ];
 
     const suites = suiteSeeds.map(function (suite) {
@@ -176,7 +177,35 @@ function seedDemoData() {
         ["Visual Algorithm Studio", "suite-design-suite", "https://github.com/fazal305/visual-algorithm-studio", "An interactive algorithm visualizer for steps, states, explanations, and learning flows."],
 
         ["Physics Playground", "suite-physics-engine", "https://github.com/fazal305/physics-playground", "An interactive simulation sandbox for motion, forces, collisions, and visual physics experiments."],
-        ["Particle Reactor", "suite-physics-engine", "https://github.com/fazal305/particle-reactor", "A particle simulation playground for emitters, motion fields, visual effects, and reactive systems."]
+        ["Particle Reactor", "suite-physics-engine", "https://github.com/fazal305/particle-reactor", "A particle simulation playground for emitters, motion fields, visual effects, and reactive systems."],
+        ["Cellular Automata Lab", "suite-physics-engine", "https://github.com/fazal305/cellular-automata-lab", "A cellular automata simulation lab for exploring Conway's Game of Life and related rule sets on a live, tunable grid."],
+
+        ["Context Rot Lab", "suite-devkit-studio", "https://github.com/fazal305/context-rot-lab", "An interactive playground exploring how large, noisy AI context degrades output quality, plus tools to shrink context before sending it to an AI assistant."],
+        ["DevFlow", "suite-devkit-studio", "https://github.com/fazal305/devflow", "A local-first, offline-capable developer workspace built on IndexedDB, Web Workers, and a hand-written Service Worker — no backend required.", "https://devflow-fz17.vercel.app/"],
+        ["DevSpace", "suite-devkit-studio", "https://github.com/fazal305/devspace", "A local-first developer workspace that runs in your browser, combining IndexedDB, CodeMirror 6, Web Workers, and a hand-written Service Worker.", "https://devspace-snowy.vercel.app/"],
+        ["GitHub Dashboard", "suite-devkit-studio", "https://github.com/fazal305/github-dashboard", "A GitHub analytics dashboard for searching users and repos, comparing profiles, visualizing languages, and tracking activity."],
+        ["Database & JavaScript Engineering Studio", "suite-devkit-studio", "https://github.com/fazal305/database-javascript-engineering-studio", "A browser-based engineering studio for SQL learning, database design, query visualization, JavaScript execution, closures, memory, and backend architecture simulation.", "https://fazal305.github.io/database-javascript-engineering-studio/"],
+        ["Fazal Framework", "suite-devkit-studio", "https://github.com/fazal305/fazal-framework", "A tiny, dependency-free frontend framework with a router, component system, state management, event bus, theme engine, and plugin system."],
+        ["Database Engineering Studio", "suite-devkit-studio", "https://github.com/fazal305/database-engineering-studio", "A database engineering toolkit with a visual schema designer, SQL playground, ER diagram visualizer, query builder, and normalization studio."],
+        ["Structured Data Engineering Studio", "suite-devkit-studio", "https://github.com/fazal305/structured-data-engineering-studio", "A structured data engineering workspace with a GraphQL explorer, JSON analytics, API playground, schema forms, and workflow builder."],
+        ["Process SOP", "suite-devkit-studio", "https://github.com/fazal305/process-sop", "An illustrative, five-stage information processing pipeline: input reception, context analysis, tool invocation, content synthesis, and quality verification.", "https://process-sop.vercel.app/"],
+
+        ["Trax", "suite-worksuite", "https://github.com/fazal305/trax", "A Trello-inspired project management app with workspaces, boards, drag-and-drop, filters, and a full dark mode — client-side only, no backend."],
+        ["Convoy — Road Trip Planner", "suite-worksuite", "https://github.com/fazal305/friends-road-trip", "A road trip planner for groups of friends, covering itinerary, route, expense settlement, packing, places, food voting, polls, and notes.", "https://fazal305.github.io/friends-road-trip/"],
+        ["Firebase Project Suite", "suite-worksuite", "https://github.com/fazal305/firebase-project-suite", "A real-time project management platform with Firebase Auth, Firestore, role-based access, task management, comments, and activity tracking."],
+        ["Fazal Notes", "suite-worksuite", "https://github.com/fazal305/Fazal-Notes", "A real note-taking app with folders, tags, note linking, version history, a feedback/bug loop, and a public-style roadmap.", "https://fazal305.github.io/Fazal-Notes/"],
+        ["Marginline", "suite-worksuite", "https://github.com/fazal305/marginline", "A personal cash-flow and financial margin management system — local-first, no cloud database, no external APIs."],
+
+        ["Connect Four", "suite-arcade", "https://github.com/fazal305/connect-four", "A configurable Connect Four game with a Minimax + Alpha-Beta AI opponent.", "https://connect-four-fz17.vercel.app/"],
+        ["Imposter — The Word Game", "suite-arcade", "https://github.com/fazal305/imposter-word-game", "A local pass-and-play social deduction word game for one device and a group of players.", "https://imposter-word-game-fz17.vercel.app/"],
+        ["Starforge", "suite-arcade", "https://github.com/fazal305/starforge-mmo", "A real-time multiplayer space strategy MMO with server-authoritative simulation over WebSockets.", "https://starforge-mmo.vercel.app/"],
+        ["Tetris — React Arcade", "suite-arcade", "https://github.com/fazal305/tetris-react", "A polished, offline-first Tetris with a 7-bag randomizer, SRS rotation, hold/ghost pieces, and a requestAnimationFrame game loop.", "https://tetris-react-nine.vercel.app/"],
+        ["Boss Fight Button Masher", "suite-arcade", "https://github.com/fazal305/boss-fight-button-masher", "A retro button masher boss fight game with timed attacks, power-ups, HP bars, and local best-run tracking."],
+        ["Zombie Survival Choice Game", "suite-arcade", "https://github.com/fazal305/zombie-survival-choice-game", "A dark text-based zombie survival RPG told through branching choices."],
+        ["Reaction Speed Tester", "suite-arcade", "https://github.com/fazal305/reaction-speed-tester", "A fullscreen reaction speed tester with neon visuals, sound effects, vibration feedback, and real millisecond timing."],
+        ["Roast Me Generator", "suite-arcade", "https://github.com/fazal305/roast-me-generator", "A chaotic dark-mode coding roast generator."],
+        ["Should I Do It?", "suite-arcade", "https://github.com/fazal305/should-i-do-it", "A chaotic late-night decision generator."],
+        ["Retro Arcade Dashboard", "suite-arcade", "https://github.com/fazal305/retro-arcade-dashboard", "A neon retro arcade dashboard with coin tracking, generated scores, local saves, and a live scoreboard."]
     ];
 
     const products = productSeeds.map(function (item, index) {
@@ -192,7 +221,7 @@ function seedDemoData() {
             tagline: makeTagline(name, item[1]),
             description: item[3],
             repositoryUrl: item[2],
-            liveUrl: createGithubPagesUrl(slug),
+            liveUrl: item[4] || createGithubPagesUrl(slug),
             techStack: makeTechStack(item[1]),
             features: makeFeatures(name),
             architectureNotes: makeArchitectureNotes(name),
@@ -259,7 +288,8 @@ function makeTagline(name, suiteId) {
         "suite-worksuite": "A productivity product for operational dashboards and everyday work.",
         "suite-civic-suite": "A civic technology interface for public systems and useful information.",
         "suite-design-suite": "A creative interface for visual thinking and frontend craft.",
-        "suite-physics-engine": "An interactive simulation product for motion and visual systems."
+        "suite-physics-engine": "An interactive simulation product for motion and visual systems.",
+        "suite-arcade": "A browser game built for fun, polish, and a little bit of chaos."
     };
     return name === "DevKit Studio" ? "VS Code meets Postman in the browser." : bySuite[suiteId];
 }
@@ -273,7 +303,8 @@ function makeTechStack(suiteId) {
         "suite-civic-suite": ["Maps Concept", "Data Visualization"],
         "suite-worksuite": ["Dashboard UI", "CRUD Patterns"],
         "suite-nightcity-os": ["Shell UI", "Widget System"],
-        "suite-devkit-studio": ["JSON", "REST", "Schema Tools"]
+        "suite-devkit-studio": ["JSON", "REST", "Schema Tools"],
+        "suite-arcade": ["Canvas", "Game Loop", "Local Leaderboards"]
     };
     return [...common, ...(extras[suiteId] || [])];
 }
