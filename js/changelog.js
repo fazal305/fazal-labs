@@ -219,6 +219,20 @@ $(function () {
 
     $("#changelogForm").on("submit", function (event) {
         event.preventDefault();
+
+        if (!$("#changeTitle").val().trim()) {
+            showStatus("Title is required", "warning");
+            return;
+        }
+        if (!$("#changeProduct").val()) {
+            showStatus("Product is required", "warning");
+            return;
+        }
+        if (!$("#changeDate").val()) {
+            showStatus("Date is required", "warning");
+            return;
+        }
+
         createChangelogEntry();
     });
 });

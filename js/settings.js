@@ -27,6 +27,16 @@ function renderBrandSettings() {
 
     $("#brandSettingsForm").on("submit", function (event) {
         event.preventDefault();
+
+        if (!$("#brandName").val().trim()) {
+            showStatus("Brand name is required", "warning");
+            return;
+        }
+        if (!$("#founderName").val().trim()) {
+            showStatus("Founder name is required", "warning");
+            return;
+        }
+
         saveBrandSettings();
     });
 }

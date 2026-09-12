@@ -206,6 +206,16 @@ $(function () {
 
     $("#roadmapForm").on("submit", function (event) {
         event.preventDefault();
+
+        if (!$("#roadmapTitle").val().trim()) {
+            showStatus("Title is required", "warning");
+            return;
+        }
+        if (!$("#roadmapProduct").val()) {
+            showStatus("Product is required", "warning");
+            return;
+        }
+
         createRoadmapItem();
     });
 });
