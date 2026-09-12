@@ -11,7 +11,7 @@
   --danger: #fb7185;
   --radius: 18px;
   --font-family:
-    Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --transition-speed: 320ms;
   --border-soft: color-mix(in srgb, var(--text) 12%, transparent);
   --border-strong: color-mix(in srgb, var(--primary) 38%, transparent);
